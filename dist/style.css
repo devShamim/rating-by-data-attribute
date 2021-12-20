@@ -1,0 +1,35 @@
+@charset "UTF-8";
+.ratings {
+  display: flex;
+  list-style-type: none;
+}
+.ratings li:before {
+  content: "\f005";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 400;
+}
+.ratings.one li:first-child:before,
+.ratings.two li:first-child:before,
+.ratings.two li:nth-child(2):before,
+.ratings.three li:first-child:before,
+.ratings.three li:nth-child(2):before,
+.ratings.three li:nth-child(3):before,
+.ratings.four li:first-child:before,
+.ratings.four li:nth-child(2):before,
+.ratings.four li:nth-child(3):before,
+.ratings.four li:nth-child(4):before,
+.ratings.five li:first-child:before,
+.ratings.five li:nth-child(2):before,
+.ratings.five li:nth-child(3):before,
+.ratings.five li:nth-child(4):before,
+.ratings.five li:nth-child(5):before  {
+  font-weight: 900;
+}
+
+.ratings.one-n-half li:nth-child(2):before,
+.ratings.two-n-half li:nth-child(3):before,
+.ratings.three-n-half li:nth-child(4):before,
+.ratings.four-n-half li:nth-child(5):before {
+  content: "\f5c0";
+  font-weight: 900;
+}

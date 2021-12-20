@@ -1,0 +1,78 @@
+.ratings{
+  display: flex;
+  list-style-type: none;
+  li{
+    &:before{
+      content: "\f005";
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 400;
+    }
+  }
+  &.one{
+    li:first-child:before{
+      font-weight: 900;
+    }
+  }
+  &.two{
+    li:first-child,
+    li:nth-child(2){
+      &:before{
+      font-weight: 900;
+      }
+    }
+  }
+  &.three{
+    li:first-child,
+    li:nth-child(2),
+    li:nth-child(3){
+      &:before{
+      font-weight: 900;
+      }
+    }
+  }
+  &.four{
+    li:first-child,
+    li:nth-child(2),
+    li:nth-child(3),
+    li:nth-child(4){
+      &:before{
+      font-weight: 900;
+      }
+    }
+  }
+  &.five{
+    li:first-child,
+    li:nth-child(2),
+    li:nth-child(3),
+    li:nth-child(4),
+    li:nth-child(5){
+      &:before{
+      font-weight: 900;
+      }
+    }
+  }
+  &.one-n-half{
+    li:nth-child(2):before{
+      content: "\f5c0";
+      font-weight: 900;
+    }
+  }
+  &.two-n-half{
+    li:nth-child(3):before{
+      content: "\f5c0";
+      font-weight: 900;
+    }
+  }
+  &.three-n-half{
+    li:nth-child(4):before{
+      content: "\f5c0";
+      font-weight: 900;
+    }
+  }
+  &.four-n-half{
+    li:nth-child(5):before{
+      content: "\f5c0";
+      font-weight: 900;
+    }
+  }
+}
